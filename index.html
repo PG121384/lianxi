@@ -1,172 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .cardheader {
+      height: 45px;
+      line-height: 45px;
+      color: #a7a3a3;
+      text-align: center;
+      font-size: larger;
+      /* margin-bottom: 8px; */
+    }
+    .shopping {
+      margin: 0 auto;
+      width: 600px;
+      height: 350px;
+      background-color: green;
+    }
+    .goodscard {
+      /* padding-top: 15px; */
 
-    }
-    .cardheader{
-        height: 45px;
-        line-height: 45px;
-        color: #a7a3a3;
-        text-align: center;
-        font-size: larger;
-        /* margin-bottom: 8px; */
-    }
-    .shopping{
-        margin: 0 auto;
-        width: 600px;
-        height: 350px;
-        background-color:  green;
-    }
-    .goodscard{
-       /* padding-top: 15px; */
-       
-        display: flex;
-        justify-content: space-around;
-        /* align-items: center; */
-        width: 100%;
-        
-        height: 240px;
-        background-color:  pink;
-       
-    }
-    .goods{
-        width: 150px;
-        height: 120px;
-        /* background-color:  red; */
-      
-    }
-    .goods-img{
-        width: 150px;
-        /* height: 100%; */
-        background-color:  pink;
-       
-    }
-    .goods-img img{
-        width: 100%;
-        height: 140px;
+      display: flex;
+      justify-content: space-around;
+      /* align-items: center; */
+      width: 100%;
 
-        object-fit: cover;
+      height: 240px;
+      background-color: pink;
     }
-    .goods-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        text-align: center;
+    .goods {
+      width: 150px;
+      height: 120px;
+      /* background-color:  red; */
     }
-    .goods-info .price{
-        font-size: 14px;
-        color: gray;
+    .goods-img {
+      width: 150px;
+      /* height: 100%; */
+      background-color: pink;
+    }
+    .goods-img img {
+      width: 100%;
+      height: 140px;
+      vertical-align: middle;
+
+      object-fit: cover;
+    }
+    .goods-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+    .goods-info .price {
+      font-size: 14px;
+      color: gray;
     }
 
-    .btn{
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
+    .btn {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
     }
-    .plus{
-        color: #f0f0f0ff;
-        
-        width: 50px;
-        /* height: 10px; */
-        background-color:  green;
-        border-radius: 15px;
-        
+    .plus {
+      color: #f0f0f0ff;
+
+      width: 50px;
+      /* height: 10px; */
+      background-color: green;
+      border-radius: 15px;
     }
-    .minus{
-        width: 50px;
-        /* height: 10px; */
-        color: #f0f0f0ff;
-        
-        background-color:  red;
-        border-radius: 15px;
-       
+    .minus {
+      width: 50px;
+      /* height: 10px; */
+      color: #f0f0f0ff;
+
+      background-color: red;
+      border-radius: 15px;
     }
-    .sum{
-        width: 480px;
-       margin: 20px auto;
-        text-align: center;
+    .sum {
+      width: 480px;
+      margin: 20px auto;
+      text-align: center;
     }
-</style>
-<body>
+  </style>
+  <body>
     <!-- 总控容器 -->
     <div class="shopping">
-        <!-- 卡片头 -->
-        <h2 class="cardheader">网咖点餐</h2>
- <!-- 卡片群整体 -->
-    <div class="goodscard">
-<!-- 单张卡片 -->
- <div class="goods">
-    <div class="goods-img">
-        <img src="./img/1.png" alt="可乐" title="可乐" >
-    </div>
-    <div class="goods-info">
-        <h3>可乐</h3>
-        <p class="price">单价：5元</p>
-        <p class="num">数量：0</p>
-    </div>
-     <!-- 按钮 -->
+      <!-- 卡片头 -->
+      <h2 class="cardheader">网咖点餐</h2>
+      <!-- 卡片群整体 -->
+      <div class="goodscard">
+        <!-- 单张卡片 -->
+        <div class="goods">
+          <div class="goods-img">
+            <img src="./img/1.png" alt="可乐" title="可乐" />
+          </div>
+          <div class="goods-info">
+            <h3>可乐</h3>
+            <p class="price">单价：5元</p>
+            <p class="num">数量：0</p>
+          </div>
+          <!-- 按钮 -->
 
-    <div class="btn">
-        <button class="plus">+</button>
-        <button class="minus">-</button>
+          <div class="btn">
+            <button class="plus">+</button>
+            <button class="minus">-</button>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods-img">
+            <img src="./img/2.png" alt="烤肠" title="烤肠" />
+          </div>
+          <div class="goods-info">
+            <h3>烤肠</h3>
+            <p class="price">单价：4元</p>
+            <p class="num">数量：0</p>
+          </div>
+          <!-- 按钮 -->
+
+          <div class="btn">
+            <button class="plus">+</button>
+            <button class="minus">-</button>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods-img">
+            <img src="./img/3.png" alt="泡面" title="泡面" />
+          </div>
+          <div class="goods-info">
+            <h3>泡面</h3>
+            <p class="price">单价：8元</p>
+            <p class="num">数量：0</p>
+          </div>
+          <!-- 按钮 -->
+
+          <div class="btn">
+            <button class="plus">+</button>
+            <button class="minus">-</button>
+          </div>
+        </div>
+      </div>
+      <!-- 计价块 -->
+      <div class="sum">合计总价：0元</div>
     </div>
-
-
- </div>
-  <div class="goods">
-    <div class="goods-img">
-        <img src="./img/2.png" alt="烤肠" title="烤肠" >
-    </div>
-    <div class="goods-info">
-        <h3>烤肠</h3>
-        <p class="price">单价：4元</p>
-        <p class="num">数量：0</p>
-    </div>
-     <!-- 按钮 -->
-
-    <div class="btn">
-        <button class="plus">+</button>
-        <button class="minus">-</button>
-    </div>
-
-
- </div>
- <div class="goods">
-    <div class="goods-img">
-        <img src="./img/3.png" alt="泡面" title="泡面" >
-    </div>
-    <div class="goods-info">
-        <h3>泡面</h3>
-        <p class="price">单价：8元</p>
-        <p class="num">数量：0</p>
-    </div>
-     <!-- 按钮 -->
-
-    <div class="btn">
-        <button class="plus">+</button>
-        <button class="minus">-</button>
-    </div>
-
-
- </div>
- 
-    </div>
-    <!-- 计价块 -->
-    <div class="sum">合计总价：0元</div>
-
-
-    </div>
-</body>
+  </body>
 </html>
